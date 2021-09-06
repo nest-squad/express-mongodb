@@ -1,0 +1,30 @@
+{
+  "extends": ["airbnb/legacy", "prettier"],
+  "plugins": ["prettier"],
+  "rules": {
+    "comma-spacing": [2, { "before": false, "after": true }],
+    "key-spacing": [2, { "align": "colon" }],
+    "keyword-spacing": [2, { "before": true, "after": true }],
+    "quote-props": ["warn", "as-needed"],
+    "quotes": ["warn", "as-needed"]
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+    "mocha": true,
+    "jquery": true
+  },
+  "globals": {
+    "by": true,
+    "browser": true,
+    "element": true,
+    "inject": true,
+    "io": true,
+    "moment": true,
+    "Promise": true,
+    "_": false,
+    "___dirname": true
+  },
+  "parser": "@typescript-eslint/parser"
+}

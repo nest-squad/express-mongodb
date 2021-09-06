@@ -1,0 +1,13 @@
+{
+  "name": "express-boilerplate",
+  "version": "0.0.5",
+  "description": "Nest Acdemy Leap-4 түвшинд тусгайлан бэлтгэв.",
+  "main": "index.ts",
+  "repository": "https://github.com/nest-squade/express-mongodb.git",
+  "author": "@nest-niko",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.4"
+  }
+}

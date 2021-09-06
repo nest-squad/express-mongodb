@@ -26,23 +26,25 @@ const UserSchema = new Schema({
     required: true
   },
   profile: {
+    type: {
+      nickname: {
+        type    : String,
+        required: true
+      },
+      avatar: {
+        type    : String,
+        required: false
+      },
+      firstname: {
+        type    : String,
+        required: false
+      },
+      lastname: {
+        type    : String,
+        required: false
+      }
+    },
     required: true,
-    nickname: {
-      type    : String,
-      required: true
-    },
-    avatar: {
-      type    : String,
-      required: false
-    },
-    firstname: {
-      type    : String,
-      required: false
-    },
-    lastname: {
-      type    : String,
-      required: false
-    }
   }
 }, defaultConf);
 

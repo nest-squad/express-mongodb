@@ -42,13 +42,13 @@ yarn start
 
 ```
 project
-│   .env
-│   .env.example    
-│   .gitignore
-│   package.json
-│   README.md
-│   tsconfig.json
-│   yarn.lock
+│   .env            <-- Энд өөрийнхөө нууц байлгах тохиргоогоо өгөөрэй.
+│   .env.example    <-- Андуураад энд хамаг тохиргоогоо өгөв. Түмний нүдэнд нууц чинь ил болно шүү XD
+│   .gitignore      <-- Энд .env болон node_modules git cloud repository луу явуулахгүй гээд заагаад өгсөн. Устгаж болохгүй шүү.
+│   package.json    <-- Ямар, ямар libray суусан байгааг сонирхоорой.
+│   README.md       <-- Та одоо намайг уншиж байна XD 
+│   tsconfig.json   <-- TypeScript тохируулга
+│   yarn.lock  
 │
 └───src
    │___ index.ts    <-- Сервер дуудаж асаах файл

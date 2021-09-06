@@ -1,4 +1,5 @@
-import mongoose from "mongoose";
-import config from "../config";
+import User from "./models/user.model"
 
-export const connection = mongoose.createConnection(config.mongo.url);
+export const db = {
+  User
+}

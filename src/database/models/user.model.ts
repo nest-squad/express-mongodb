@@ -1,6 +1,19 @@
 import { Schema, model } from "mongoose";
 import { defaultConf } from "../config";
 
+export interface Profile extends Document {
+  nickname: string;
+  avatar?: string;
+  firstname?: string;
+  lastname?: string;
+}
+
+export interface IUser extends Document {
+  email: string;
+  username: string;
+  profile: Profile
+}
+
 const UserSchema = new Schema({
   username: {
     type    : String,
@@ -13,6 +26,7 @@ const UserSchema = new Schema({
     required: true
   },
   profile: {
+    required: true,
     nickname: {
       type    : String,
       required: true
@@ -32,4 +46,4 @@ const UserSchema = new Schema({
   }
 }, defaultConf);
 
-export default model("user", UserSchema);
+export default model<IUser>("user", UserSchema);
